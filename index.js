@@ -54,7 +54,7 @@ function startBot(message) {
     });
 
     child.on("error", (error) => {
-        logger(`An error occurred: ${JSON.stringify(error)}`, "[ Ayush ]");
+        logger(`An error occurred: ${JSON.stringify(error)}`, "[ Ayan ]");
     });
 }
 
@@ -69,7 +69,7 @@ axios.get("https://raw.githubusercontent.com/priyanshu192/bot/main/package.json"
         logger(res.data.description, "[ Mirrykal ]");
     })
     .catch((err) => {
-        logger(`Failed to fetch update info: ${err.message}`, "[ Ayush ]");
+        logger(`Failed to fetch update info: ${err.message}`, "[ Ayan ]");
     });
 
 // Start the bot
